@@ -1,276 +1,272 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prity's Portfolio</title>
+    <title>Prity Singha | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles/themes.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-bs-theme="light">
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg" style="height: 80px;">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Prity's Portfolio</a>
-            <div class="d-flex align-items-center">
-                <div class="theme-toggle me-3">
-                    <i class="fas fa-sun"></i>
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="themeToggle">
-                        <label for="themeToggle"></label>
-                    </div>
-                    <i class="fas fa-moon"></i>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+            <a class="navbar-brand" href="#">Prity Singha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <div class="theme-toggle ms-3">
+                    <span class="toggle-icon">🌓</span>
+                </div>
             </div>
         </div>
     </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero vh-100 d-flex align-items-center">
-    <div class="hero-particles"></div>
-    <div class="container position-relative">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <div class="hero-content">
-                    <h1 class="hero-title mb-4">
-                        <span class="animated-text">Prity</span>
-                        <span class="animated-text delay-1">Singha</span>
-                    </h1>
-                    <p class="hero-subtitle mb-4">B.Sc. Computer Science Student | Web Developer</p>
-                    <div class="contact-info mb-5">
-                        <a href="tel:+917319336871" class="text-decoration-none text-light me-3">
-                            <i class="fas fa-phone"></i> +91 73193 36871
-                        </a>
-                        <a href="mailto:pritysingha001@gmail.com" class="text-decoration-none text-light me-3">
-                            <i class="fas fa-envelope"></i> pritysingha001@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/prity-singha" target="_blank" class="text-decoration-none text-light">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
+    <!-- Hero Section -->
+    <section class="hero vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Avatar -->
+                <div class="col-12 col-md-8 col-lg-6 text-center">
+                    <div class="hero-avatar-wrapper mt-5">
+                        <img src="assets/images/profile.jpg" 
+                            alt="Prity Singha" 
+                            class="hero-avatar img-fluid">
                     </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-12 col-lg-8 text-center mb-5">
+                    <h3 class="hero-title mb-4">Passionate about web development & problem-solving.</h3>
+                    <a href="#projects" class="btn btn-primary btn-lg px-5 py-3">
+                        Explore My Work
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Floating Shapes -->
-    <div class="hero-shape shape-1"></div>
-    <div class="hero-shape shape-2"></div>   
-    
-</section>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="about section-padding">
-    <div class="container">
-        <h2 class="section-title text-center">About Me</h2>
-        <div class="row g-5 align-items-center">
-            <!-- Profile Image Column -->
-            <div class="col-lg-4 text-center">
-                <div class="profile-img-container">
-                    <img src="assets/images/profile.jpg" alt="Profile Image of Prity Singha" class="profile-img img-fluid rounded">
-                </div>
-                <h3 class="profile-name mt-3">Prity Singha</h3>
-                <p class="profile-bio">BSc Computer Science Student</p>
-            </div>
+        <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Main Content -->
+                <div class="col-lg-7">
+                    <h2 class="section-title mb-4 gradient-text">About Me</h2>
+                    <p class="lead mb-4">
+                        A passionate Computer Science student specializing in full-stack development, 
+                        dedicated to creating meaningful digital experiences through clean code 
+                        and innovative solutions.
+                    </p>
+                    
+                    <div class="about-card card-border">
+                        <h3 class="mb-3">Education & Expertise</h3>
+                        <ul class="timeline-list">
+                            <li>
+                                <h5>B.Sc. in Computer Science</h5>
+                                <p class="text-muted">Kazi Najrul University | 2023-Present</p>
+                                <p>Core Focus: Data Structures, Web Development, Software Engineering</p>
+                            </li>
+                        </ul>
+                    </div>
 
-            <!-- Timeline and Skills Column -->
-            <div class="col-lg-8">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4 class="fw-bold">Education</h4>
-                        <p class="mb-1"><strong>Kazi Nazrul University</strong></p>
-                        <p class="mb-1">B.Sc. (Hons) Computer Science</p>
-                        <p class="text-muted">2023 - Present | GPA: 7.5</p>
-
-                        <p class="mb-1 mt-3"><strong>Triveni Devi Bhalotia College</strong></p>
-                        <p class="text-muted">Foundation in Computer Science</p>
+                    <div class="about-card mt-4">
+                        <h3 class="mb-3">Career Vision</h3>
+                        <p>
+                            Striving to bridge technical excellence with user-centric design, 
+                            I aim to develop solutions that simplify complex problems while 
+                            maintaining aesthetic integrity and performance.
+                        </p>
                     </div>
                 </div>
 
-                <div class="skills mt-4">
-                    <h4 class="fw-bold">Technical Skills</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="skill-category">
-                                <h5>Programming Languages</h5>
-                                <ul class="list-unstyled">
-                                    <li>✅ C/C++</li>
-                                    <li>✅ Python</li>
-                                    <li>✅ JavaScript</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill-category">
-                                <h5>Web Development</h5>
-                                <ul class="list-unstyled">
-                                    <li>🌐 HTML5</li>
-                                    <li>🎨 CSS3</li>
-                                    <li>🚀 Bootstrap</li>
-                                    <li>🔗 PHP</li>
-                                </ul>
-                            </div>
+                <!-- Sidebar -->
+                <div class="col-lg-5">
+                    <div class="about-card skills-card">
+                        <h3 class="mb-4">Technical Arsenal</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">MySQL</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Social Links -->
-        <div class="social-links text-center mt-4">
-            <a href="https://github.com/PritySingha" target="_blank" class="mx-2"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/prity-singha" target="_blank" class="mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="#" target="_blank" class="mx-2"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#" target="_blank" class="mx-2"><i class="fab fa-instagram fa-2x"></i></a>
-        </div>
-    </div>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title mb-5 gradient-text">Featured Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters mb-5">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-filter active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-filter" data-filter="web">Web Dev</button>
+                    <button type="button" class="btn btn-filter" data-filter="fullstack">Full Stack</button>
+                    <button type="button" class="btn btn-filter" data-filter="other">Others</button>
+                </div>
+            </div>
 
-    <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section-padding">
-    <div class="container">
-        <h2 class="section-title mb-5">Featured Projects</h2>
-        
-        <div class="row grid">
-            <!-- ClassVibes Project -->
-            <div class="col-lg-6 grid-item web" data-category="web">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/classvibesPic.png" alt="ClassVibes" class="img-fluid">
-                    </div>
-                    <div class="project-content">
-                        <h4 class="project-title">ClassVibes Management System</h4>
-                        <span class="project-category">Full-stack Web Application</span>
-                        <div class="project-hover">
-                            <p class="project-description">
-                                Smart classroom system with role-based access (Admin/Teacher/Student)
-                            </p>
-                            <div class="project-tech">
+            <!-- Project Grid -->
+            <div class="row g-4 project-grid">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <img src="assets/projects/classvibes.jpg" class="project-image" alt="ClassVibes Project">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">ClassVibes</h3>
+                            <p class="project-description">Smart classroom management system with QR attendance tracking and role-based access control.</p>
+                            <div class="tech-stack mb-3">
                                 <span class="tech-badge">PHP</span>
                                 <span class="tech-badge">MySQL</span>
                                 <span class="tech-badge">Bootstrap</span>
-                                <span class="tech-badge">JavaScript</span>
                             </div>
-                            <div class="project-features">
-                                <ul>
-                                    <li>QR Code Attendance System</li>
-                                    <li>Dynamic Report Generation</li>
-                                    <li>Theme Switching Functionality</li>
-                                </ul>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Portfolio Project -->
-            <div class="col-lg-6 grid-item web" data-category="web">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/portfolioPic.png" alt="Portfolio" class="img-fluid">
-                    </div>
-                    <div class="project-content">
-                        <h4 class="project-title">Personal Portfolio</h4>
-                        <span class="project-category">Frontend Development</span>
-                        <div class="project-hover">
-                            <p class="project-description">
-                                Responsive portfolio with interactive elements and theme customization
-                            </p>
-                            <div class="project-tech">
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="fullstack">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <img src="assets/projects/portfolio.jpg" class="project-image" alt="Portfolio Project">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">Responsive personal portfolio with dynamic theme switching and interactive animations.</p>
+                            <div class="tech-stack mb-3">
                                 <span class="tech-badge">HTML5</span>
                                 <span class="tech-badge">CSS3</span>
                                 <span class="tech-badge">JavaScript</span>
                             </div>
-                            <div class="project-features">
-                                <ul>
-                                    <li>Dark/Light Mode Toggle</li>
-                                    <li>Smooth Animations</li>
-                                    <li>Project Filter System</li>
-                                </ul>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-primary btn-sm">View Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title mb-5 gradient-text">Technical Toolkit</h2>
+            
+            <div class="row g-4">
+                <!-- Languages -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category">
+                        <h3 class="category-title">Languages</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">C/C++</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category">
+                        <h3 class="category-title">Web Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-category">
+                        <h3 class="category-title">Databases & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Git/GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                            <span class="skill-badge">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact section-padding">
-    <div class="container">
-        <h2 class="section-title mb-5">Let's Connect</h2>
-        
-        <div class="row g-5">
-            <!-- Contact Form -->
-            <div class="col-lg-7">
-                <form class="contact-form needs-validation" novalidate>
-                    <div class="form-floating mb-4">
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
-                        <label for="name">Your Name</label>
-                        <div class="invalid-feedback">Please enter your name</div>
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title mb-5 gradient-text">Get in Touch</h2>
+            
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-card">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                        Message sent successfully!
                     </div>
-                    
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" id="email" placeholder="Email" required>
-                        <label for="email">Email Address</label>
-                        <div class="invalid-feedback">Please enter a valid email</div>
-                    </div>
-                    
-                    <div class="form-floating mb-4">
-                        <textarea class="form-control" id="message" placeholder="Message" style="height: 150px" required></textarea>
-                        <label for="message">Your Message</label>
-                        <div class="invalid-feedback">Please enter your message</div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-lg w-100">
-                        Send Message <i class="fas fa-paper-plane ms-2"></i>
-                    </button>
-                </form>
-            </div>
+                </div>
 
-            <!-- Contact Info -->
-            <div class="col-lg-5">
-                <div class="contact-info-box p-4 rounded-4 shadow">
-                    <h4 class="mb-4">Direct Contact</h4>
-                    <div class="contact-item d-flex mb-4">
-                        <div class="icon-box bg-primary me-3">
-                            <i class="fas fa-map-marker-alt"></i>
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <a href="mailto:pritysingha001@gmail.com">pritysingha001@gmail.com</a>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Location</h5>
-                            <p>Raniganj, West Bengal, India</p>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>LinkedIn</h5>
+                                <a href="https://linkedin.com/in/prity-singha" target="_blank">linkedin.com/in/prity-singha</a>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item d-flex mb-4">
-                        <div class="icon-box bg-primary me-3">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h5>Email</h5>
-                            <p>pritysingha001@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links mt-5">
-                        <h5 class="mb-3">Follow Me</h5>
-                        <div class="d-flex gap-3">
+
+                        <div class="social-links mt-4">
                             <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                         </div>
@@ -278,18 +274,56 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Prity's Portfolio. All rights reserved</p>
+    <!-- Footer Section -->
+<footer class="footer section-padding">
+    <div class="container">
+        <div class="row g-5">
+            <!-- About Column -->
+            <div class="col-md-4 col-12">
+                <div class="footer-brand mb-4">
+                    <h3 class="gradient-text">Prity Singha</h3>
+                </div>
+                <p class="footer-text">
+                    A passionate developer creating meaningful digital experiences through clean code and innovative solutions.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-4 col-12">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-md-4 col-12">
+                <h4 class="footer-heading">Let's Connect</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </footer>
 
+        <!-- Copyright -->
+        <div class="footer-bottom mt-5 pt-4 text-center">
+            <p class="copyright-text">
+                © 2024 Prity Singha. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="/scripts/script.js" type="module"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
