@@ -50,57 +50,6 @@ Portfolio-Prity_singha/
 
 ---
 
-## 🚀 How to Update Content (Maintenance Guide)
-
-This portfolio uses a data-driven system. To update your site, you **only** need to edit the `assets/js/data.js` file.
-
-### 1. Adding a New Technical Project
-Open `assets/js/data.js`, locate the `portfolioData` array, and add a new object:
-
-```javascript
-{
-    id: "unique-project-id", // Must be unique, lowercase, no spaces
-    title: "Project Name",
-    category: "web", // Options: 'web', 'ml', or 'data'
-    categoryLabel: "Full-Stack Web Dev",
-    description: "A short 1-2 sentence description of the project.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    coverImage: "assets/images/projects/my-project-cover.jpg",
-    slides: [
-        "assets/images/projects/my-project-slide1.jpg",
-        "assets/images/projects/my-project-slide2.jpg"
-    ],
-    github: "https://github.com/your-link",
-    demo: "https://your-live-demo.com",
-    presentation: "assets/documents/my-presentation.pdf", // Optional
-    problem: "The problem this project solves...",
-    features: ["Feature 1", "Feature 2"]
-}
-```
-
-### 2. Adding Creative Work (Posters, Invitations, PPTs)
-Locate the relevant arrays at the bottom of `data.js`:
-*   **Posters:** Add image paths to the `posterData` array.
-*   **Invitations:** Add image paths to the `invitationData` array.
-*   **Presentations:** Add objects to the `presentationsData` array.
-
-### 3. Adding Media Files
-*   Place all images in `assets/images/projects/` or `assets/images/creative/`. 
-*   **Optimization Tip:** Always compress images using tools like [TinyPNG](https://tinypng.com/) before uploading to ensure fast load times.
-*   Convert PowerPoint presentations to **PDF** and place them in `assets/documents/` so they can be viewed directly in the browser.
-
----
-
-## 💻 Running Locally
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/PritySingha/Portfolio-Prity_singha.git
-   ```
-2. Open the folder in VS Code.
-3. Use an extension like **Live Server** to preview the site locally, or simply double-click `index.html` to open it in your browser.
-
----
 
 ## 📬 Contact
 
